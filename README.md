@@ -32,9 +32,9 @@ The project compares a Decision Tree classifier with a K-Nearest Neighbors (KNN)
 
 Both models are evaluated on the same held-out test set using accuracy, a classification report, and a confusion matrix.
 
-- Decision Tree accuracy: [Fill in actual result]
-- KNN accuracy: [Fill in actual result]
-- Better-performing model: [Fill in after evaluation]
+- Decision Tree accuracy: 84.23%
+- KNN accuracy: 86.12%
+- Better-performing model: K-Nearest Neighbors (KNN)
 
 ## How to Run
 
@@ -44,7 +44,13 @@ Both models are evaluated on the same held-out test set using accuracy, a classi
 
 ## Conclusion
 
-[Write your conclusion after running both models. Compare their actual test results, discuss classification errors, and describe the most important features identified by the Decision Tree.]
+AirGuard compared two machine learning models, Decision Tree and K-Nearest Neighbors (KNN), to classify observed CO concentrations into lower, moderate, and higher relative categories using the UCI Air Quality dataset.
+
+KNN achieved an accuracy of **86.12%**, outperforming the Decision Tree, which achieved **84.23%**, by approximately 1.89 percentage points. The Decision Tree's feature-importance analysis identified `PT08.S2(NMHC)` as the most influential feature (72.48%), followed by `NOx(GT)` (16.41%).
+
+The confusion matrices helped evaluate classification errors across the three categories. This project provided practical experience in data cleaning, handling missing values, feature preparation, model training, evaluation, and feature-importance analysis.
+
+AirGuard is an educational classification prototype, not a real-time pollution forecasting system or an official air-quality warning tool. Future improvements could include more rigorous validation, testing on independent datasets, and further analysis of class-wise precision and recall.
 
 ## Limitations
 
